@@ -1,0 +1,47 @@
+cynthia@DESKTOP-AQFVE4J MINGW64 ~
+$ cd d:/
+cynthia@DESKTOP-AQFVE4J MINGW64 /d
+$ cd PLPBASICGITASSINGMENT/
+
+cynthia@DESKTOP-AQFVE4J MINGW64 /d/PLPBASICGITASSINGMENT
+$ git init
+Initialized empty Git repository in D:/PLPBASICGITASSINGMENT/.git/
+
+cynthia@DESKTOP-AQFVE4J MINGW64 /d/PLPBASICGITASSINGMENT (master)
+$ git remote add origin https://github.com/phillohk/PLPBASICGITASSINGMENT.git
+
+cynthia@DESKTOP-AQFVE4J MINGW64 /d/PLPBASICGITASSINGMENT (master)
+$ git remote -v
+origin  https://github.com/phillohk/PLPBASICGITASSINGMENT.git (fetch)
+origin  https://github.com/phillohk/PLPBASICGITASSINGMENT.git (push)
+
+cynthia@DESKTOP-AQFVE4J MINGW64 /d/PLPBASICGITASSINGMENT (master)
+$ echo "Hello, Git!" > message.txt
+
+cynthia@DESKTOP-AQFVE4J MINGW64 /d/PLPBASICGITASSINGMENT (master)
+$ cat message.txt
+Hello, Git!
+
+cynthia@DESKTOP-AQFVE4J MINGW64 /d/PLPBASICGITASSINGMENT (master)
+$ git add message.txt
+warning: in the working copy of 'message.txt', LF will be replaced by CRLF the next time Git touches it
+
+cynthia@DESKTOP-AQFVE4J MINGW64 /d/PLPBASICGITASSINGMENT (master)
+$ git commit -m "Add message.txt with a simple greeting"
+[master (root-commit) 42c64e0] Add message.txt with a simple greeting
+ 1 file changed, 1 insertion(+)
+ create mode 100644 message.txt
+
+cynthia@DESKTOP-AQFVE4J MINGW64 /d/PLPBASICGITASSINGMENT (master)
+$  git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 254 bytes | 25.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/phillohk/PLPBASICGITASSINGMENT/pull/new/master
+remote:
+To https://github.com/phillohk/PLPBASICGITASSINGMENT.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
